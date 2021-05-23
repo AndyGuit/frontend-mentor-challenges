@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [URL](https://faq-accordion-card-delta-ten.vercel.app/)
+- Live Site URL: [FAQ accordion card](https://faq-accordion-card-delta-ten.vercel.app/)
 
 ## My process
 
