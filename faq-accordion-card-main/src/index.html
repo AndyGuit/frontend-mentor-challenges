@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="faq-card">
+
+      <div class="img-section">
+        <img src="" alt="" class="img-shadow">
+        <img class="img-woman" src="../static/img/illustration-woman-online-mobile.svg" alt="">
+        <div class="desktop-img">
+          <img class="img-woman-desktop" src="../static/img/illustration-woman-online-desktop.svg" alt="">
+        </div>
+        <img class="img-box" src="../static/img/illustration-box-desktop.svg" alt="">
+      </div>
+
+      <div class="faq-card__content">
+        <div class="faq-card__header">faq</div>
+        <div class="faq-card__container">
+          <input type="radio" class="faq-card__hide" id="btn1" name="x1">
+          <label for="btn1" class="faq-card__trigger">
+            How many team members can I invite?
+          </label>
+          <div class="faq-card__text">
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </div>
+        </div>
+        <div class="faq-card__container">
+          <input type="radio" class="faq-card__hide" id="btn2" name="x1" checked="checked">
+          <label for="btn2" class="faq-card__trigger">
+            What is the maximum file upload size?
+          </label>
+          <div class="faq-card__text">
+            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+        </div>
+        <div class="faq-card__container">
+          <input type="radio" class="faq-card__hide" id="btn3" name="x1">
+          <label for="btn3" class="faq-card__trigger">
+            How do I reset my password?
+          </label>
+          <div class="faq-card__text">
+            <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+          </div>
+        </div>
+        <div class="faq-card__container">
+          <input type="radio" class="faq-card__hide" id="btn4" name="x1">
+          <label for="btn4" class="faq-card__trigger">
+            Can I cancel my subscription?
+          </label>
+          <div class="faq-card__text">
+            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+        </div>
+        <div class="faq-card__container">
+          <input type="radio" class="faq-card__hide" id="btn5" name="x1">
+          <label for="btn5" class="faq-card__trigger">
+            Do you provide additional support?
+          </label>
+          <div class="faq-card__text">
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!-- faq-card -->
+
+  </div> <!-- wrapper -->
+
+</body>
+</html>
