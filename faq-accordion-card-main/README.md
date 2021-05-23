@@ -50,6 +50,6 @@ Users should be able to:
 
 ## Author
 
-- LinkedIn - [Andrey Dmytryk](www.linkedin.com/in/AndyGuit)
+- LinkedIn - [Andrey Dmytryk](www.linkedin.com/in/andyguit)
 - GitHub - [AndyGuit](https://github.com/AndyGuit)
 - Frontend Mentor - [AndyGuit](https://www.frontendmentor.io/profile/AndyGuit)
