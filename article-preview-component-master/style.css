@@ -106,3 +106,7 @@ body {
 .arcticle-card__button:hover {
   background-color: var(--very-dark-grayish-blue);
 }
+
+.arcticle-card__button:hover svg path {
+  fill: #ECF2F8;
+}
