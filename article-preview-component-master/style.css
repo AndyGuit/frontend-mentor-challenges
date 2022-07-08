@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+--very-dark-grayish-blue: hsl(217, 19%, 35%);
+--desaturated-dark-blue: hsl(214, 17%, 51%);
+--grayish-blue: hsl(212, 23%, 69%);
+--light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arcticle-card {
+  width: 20.5rem;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  margin-top: calc(4.5rem + 2px);
+  box-shadow: 0 0 15px var(--grayish-blue);
+}
+
+.arcticle-card__content {
+  padding: 2.3rem 2rem 1.2rem 2rem;
+}
+
+.arcticle-card__img {
+  background-image: url(./images/drawers.jpg);
+  background-size: cover;
+  background-position: left 0 top 25%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem 0.5rem 0 0;
+  max-width: 100%;
+  height: 12.5rem;
+}
+
+.arcticle-card__header h2 {
+  font-size: 1rem;
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.5rem;
+  letter-spacing: 0.18px;
+  margin-bottom: 0.8rem;
+}
+
+.arcticle-card__header p {
+  font-size: 0.8rem;
+  letter-spacing: 0.2px;
+  color: var(--grayish-blue);
+  line-height: 1.25rem;
+  white-space: pre;
+}
+
+.arcticle-card__footer {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 2rem;
+}
+
+.arcticle-card__avatar {
+  height: 2.5rem;
+}
+
+.arcticle-card__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.arcticle-card__user {
+  margin-left: 1rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+.arcticle-card__user-name {
+  font-size: 0.8rem;
+  letter-spacing: 0.18px;
+}
+
+.arcticle-card__date {
+  font-weight: 500;
+  margin-top: 2px;
+  color: var(--grayish-blue);
+}
+
+.arcticle-card__button {
+  border: none;
+  background-color: var(--light-grayish-blue);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  align-self: center;
+  margin-left: auto;
+}
+
+.arcticle-card__button:hover {
+  background-color: var(--very-dark-grayish-blue);
+}
