@@ -9,10 +9,11 @@
 }
 
 :root {
---very-dark-grayish-blue: hsl(217, 19%, 35%);
---desaturated-dark-blue: hsl(214, 17%, 51%);
---grayish-blue: hsl(212, 23%, 69%);
---light-grayish-blue: hsl(210, 46%, 95%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --border-radius: 0.7rem;
 }
 
 body {
@@ -25,14 +26,16 @@ body {
 
 .arcticle-card {
   width: 20.5rem;
+  position: relative;
   background-color: #fff;
-  border-radius: 0.7rem;
+  border-radius: var(--border-radius);
   margin-top: calc(4.5rem + 2px);
   box-shadow: 0 0 15px var(--grayish-blue);
+  overflow: hidden;
 }
 
 .arcticle-card__content {
-  padding: 2.3rem 2rem 1.2rem 2rem;
+  padding: 2.3rem 2rem 0.7rem 2rem;
 }
 
 .arcticle-card__img {
@@ -50,10 +53,10 @@ body {
   color: var(--very-dark-grayish-blue);
   line-height: 1.5rem;
   letter-spacing: 0.18px;
-  margin-bottom: 0.8rem;
 }
 
 .arcticle-card__header p {
+  margin-top: -0.5rem;
   font-size: 0.8rem;
   letter-spacing: 0.2px;
   color: var(--grayish-blue);
@@ -63,8 +66,8 @@ body {
 
 .arcticle-card__footer {
   display: flex;
-  /* justify-content: space-between; */
-  margin-top: 2rem;
+  position: relative;
+  margin-top: 0.8rem;
 }
 
 .arcticle-card__avatar {
@@ -94,6 +97,12 @@ body {
 }
 
 .arcticle-card__button {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  z-index: 5;
+  transform: translateY(-50%);
+  transition: background 0.3s;
   border: none;
   background-color: var(--light-grayish-blue);
   border-radius: 50%;
@@ -101,12 +110,73 @@ body {
   height: 2rem;
   align-self: center;
   margin-left: auto;
+  cursor: pointer;
 }
 
-.arcticle-card__button:hover {
-  background-color: var(--very-dark-grayish-blue);
+.arcticle-card__button:hover,
+.arcticle-card__button.active {
+  background-color: var(--desaturated-dark-blue);
 }
 
 .arcticle-card__button:hover svg path {
-  fill: #ECF2F8;
+  transition: background 0.3s;
+}
+
+.arcticle-card__button:hover svg path,
+.arcticle-card__button.active svg path {
+  fill: #ecf2f8;
+}
+
+.arcticle-card__popup {
+  display: flex;
+  padding: 1.3rem 2rem 1.2rem 2rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--very-dark-grayish-blue);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.arcticle-card__popup.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.arcticle-card__share-btn {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--grayish-blue);
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.arcticle-card__share-btn:hover {
+  color: var(--light-grayish-blue);
+}
+
+.arcticle-card__social {
+  display: flex;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
+}
+
+.arcticle-card__social a {
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.arcticle-card__social a path {
+  transition: fill 0.3s;
+}
+
+.arcticle-card__social a:hover path {
+  fill: var(--desaturated-dark-blue);
 }
