@@ -135,7 +135,7 @@ body {
   padding: 1.3rem 2rem 1.2rem 2rem;
   width: 100%;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   background-color: var(--very-dark-grayish-blue);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
@@ -147,6 +147,18 @@ body {
 .arcticle-card__popup.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.arcticle-card__bottom-arrow {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  z-index: -1;
+  transform: translate(-50%) rotate(45deg);
+  background-color: var(--very-dark-grayish-blue);
+  width: 25px;
+  height: 25px;
 }
 
 .arcticle-card__share-btn {
@@ -184,11 +196,12 @@ body {
   fill: var(--desaturated-dark-blue);
 }
 
-@media (min-width: 45rem) {
+@media (min-width: 48rem) {
   .arcticle-card {
     flex-direction: row;
     max-width: 45.5rem;
-    height: 280px;
+    height: 17.5rem;
+    overflow: visible;
   }
 
   .arcticle-card__img {
@@ -215,5 +228,17 @@ body {
 
   .arcticle-card__header p {
     margin-bottom: 1.5rem;
+  }
+
+  .arcticle-card__popup {
+    width: 250px;
+    bottom: 95px;
+    right: -68px;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: var(--border-radius);
+  }
+
+  .arcticle-card__bottom-arrow {
+    display: block;
   }
 }
