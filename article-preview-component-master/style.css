@@ -52,7 +52,7 @@ body {
   height: 12.5rem;
 }
 
-.arcticle-card__header h2 {
+.arcticle-card__header h1 {
   font-size: 1rem;
   color: var(--very-dark-grayish-blue);
   line-height: 1.5rem;
@@ -94,6 +94,7 @@ body {
 }
 
 .arcticle-card__date {
+  font-size: 0.8rem;
   font-weight: 500;
   margin-top: 2px;
   color: var(--grayish-blue);
@@ -221,7 +222,7 @@ body {
     padding: 2rem 2.5rem 2rem 0;
   }
 
-  .arcticle-card__header h2 {
+  .arcticle-card__header h1 {
     font-size: 1.25rem;
     line-height: 1.7rem;
   }

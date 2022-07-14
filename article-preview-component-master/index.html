@@ -15,41 +15,44 @@
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
-    <div class="arcticle-card">
+    <main class="arcticle-card">
       <div class="arcticle-card__img"></div>
       <div class="arcticle-card__content">
-        <div class="arcticle-card__header">
-          <h2>
+        <header class="arcticle-card__header">
+          <h1>
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
-          </h2>
+          </h1>
           <p>
             Ever been in a room and felt like something was missing? Perhaps it
             felt slightly bare and uninviting. I've got some simple tips to help
             you make any room feel complete.
           </p>
-        </div>
-        <div class="arcticle-card__footer">
+        </header>
+        <footer class="arcticle-card__footer">
           <div class="arcticle-card__avatar">
             <img src="./images/avatar-michelle.jpg" alt="avatar-michelle.jpg" />
           </div>
           <div class="arcticle-card__user">
-            <h4 class="arcticle-card__user-name">Michelle Appleton</h4>
-            <h5 class="arcticle-card__date">28 Jun 2020</h5>
+            <p class="arcticle-card__user-name">Michelle Appleton</p>
+            <p class="arcticle-card__date">28 Jun 2020</p>
           </div>
-          <button class="arcticle-card__button">
+          <button class="arcticle-card__button" aria-label="Share card">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
               <path
                 fill="#6E8098"
                 d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
             </svg>
           </button>
-        </div>
+        </footer>
         <div class="arcticle-card__popup">
-          <button class="arcticle-card__share-btn">Share</button>
+          <button class="arcticle-card__share-btn" role="social">Share</button>
           <ul class="arcticle-card__social">
             <li>
-              <a href="https://www.facebook.com/" target="_blank">
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Go to facebook"
+                target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                   <path
                     fill="#FFF"
@@ -58,7 +61,10 @@
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/" target="_blank">
+              <a
+                href="https://twitter.com/"
+                aria-label="Go to twitter"
+                target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
                   <path
                     fill="#FFF"
@@ -67,7 +73,10 @@
               </a>
             </li>
             <li>
-              <a href="https://www.pinterest.com/" target="_blank">
+              <a
+                href="https://www.pinterest.com/"
+                aria-label="Go to pinterest"
+                target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                   <path
                     fill="#FFF"
@@ -79,6 +88,6 @@
           <div class="arcticle-card__bottom-arrow"></div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
