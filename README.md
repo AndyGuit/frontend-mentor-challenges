@@ -4,7 +4,7 @@
 | :-: | :-------------------------------------------------------------: | :-----------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 | 01  | [FAQ Accordion Card without JS](#faq-accordion-card-without-js) | [URL](https://faq-accordion-card-delta-ten.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/faq-accordion-card-main) |
 | 02  | [Article preview component](#article-preview-component) | [URL](https://article-preview-component-brown.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/article-preview-component-master) |
-| 03  | [Single price grid component](#single-price-grid-component) | [URL](https://article-preview-component-brown.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master) |
+| 03  | [Single price grid component](#single-price-grid-component) | [URL](https://single-price-grid-component-lime-one.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master) |
 
 
 ## FAQ Accordion Card without JS
@@ -23,7 +23,7 @@
 
 ## Single price grid component
 
-- Live Site URL: [Single price grid component](https://article-preview-component-brown.vercel.app/)
+- Live Site URL: [Single price grid component](https://single-price-grid-component-lime-one.vercel.app/)
 - GitHub Repo: [Single price grid component](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master)
 
 ![Desktop](single-price-grid-component-master/solution_desktop.jpg)
