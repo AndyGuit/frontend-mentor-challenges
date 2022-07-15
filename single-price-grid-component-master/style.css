@@ -1,1 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+:root {
+  --primary-color: hsl(179, 62%, 43%);
+  --secondary-color: hsl(71, 73%, 54%);
+  --primary-text-color: hsl(218, 22%, 67%);
+  --body-bg-color: hsl(204, 43%, 93%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  font-family: 'Karla', sans-serif;
+}
+
+.price-card {
+  display: grid;
+  max-width: 19.5rem;
+  width: 100%;
+  border-radius: 5px;
+  background: transparent;
+  box-shadow: 0 0 20px var(--primary-text-color);
+}
+
+.price-card__header {
+  padding: 1.7rem 1rem 2rem 1.5rem;
+  border-radius: 5px 5px 0 0;
+  background-color: #fff;
+}
+
+.price-card__title {
+  margin-bottom: 1.5rem;
+  font-size: 1.23rem;
+  color: var(--primary-color);
+}
+
+.price-card__guarantee {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--secondary-color);
+}
+
+.price-card__description {
+  font-size: 0.85rem;
+  line-height: 1.85;
+  color: var(--primary-text-color);
+}
+
+.price-card__buy-plan {
+  padding: 1.7rem 1.5rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.price-card__plan-name {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.price-card__price {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-card__price strong {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+}
+
+.price-card__plan-descr {
+  margin-bottom: 1.8rem;
+  letter-spacing: -0.15px;
+}
+
+.price-card__plan-descr em {
+  font-style: normal;
+}
+
+.price-card__button {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px #696969;
+  background: var(--secondary-color);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.price-card__button:hover {
+  background: #fff;
+  color: var(--secondary-color);
+}
+
+.price-card__footer {
+  padding: 1.5rem;
+  border-radius: 0 0 5px 5px;
+  background: rgb(42 178 175 / 80%);
+  color: #fff;
+}
+
+.price-card__footer-title {
+  margin-bottom: 1rem;
+}
+
+.price-card__list {
+  list-style: none;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.price-card__list li:last-child {
+  margin-bottom: 0;
+}
