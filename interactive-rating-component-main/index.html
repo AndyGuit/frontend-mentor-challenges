@@ -10,24 +10,50 @@
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
-
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
+    <form>
+      <section class="rating-state">
+        <!-- Rating state start -->
+        <img src="./images/icon-star.svg" alt="star" />
+        <h1 class="rating-state__title">How did we do?</h1>
+        <p class="rating-state__description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-state__ratings">
+          <input type="radio" name="rating" id="rate1" />
+          <label for="rate1">1</label>
+          <input type="radio" name="rating" id="rate2" />
+          <label for="rate2">2</label>
+          <input type="radio" name="rating" id="rate3" />
+          <label for="rate3">3</label>
+          <input type="radio" name="rating" id="rate4" />
+          <label for="rate4">4</label>
+          <input type="radio" name="rating" id="rate5" />
+          <label for="rate5">5</label>
+        </div>
+        <button class="rating-state__submit">Submit</button>
+        <!-- Rating state end -->
+      </section>
+      <section class="thank-you-state">
+        <!-- Thank you state start -->
+        <img src="./images/illustration-thank-you.svg" alt="thank you" />
+        <p class="thank-you__selected">
+          You selected
+          <span class="thank-you-state__rating"></span>
+          out of 5
+        </p>
+        <h2 class="thank-you-state__title">Thank you!</h2>
+        <p class="thank-you-state__description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <!-- Thank you state end -->
+      </section>
+    </form>
   </body>
 </html>
