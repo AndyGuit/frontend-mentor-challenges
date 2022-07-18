@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --primary-color: rgb(251, 116, 19);
+  --light-grey: rgb(149, 158, 172);
+  --medium-grey: rgb(124, 135, 152);
+  --dark-blue: rgb(37, 45, 55);
+  --very-dark-blue: rgb(18, 20, 23);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+}
+
+.disabled {
+  display: none;
+}
+
+.rating-form {
+  max-width: 330px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  padding: 25px;
+}
+
+.rating-state__img {
+  width: 40px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  padding: 13px;
+  background-color: rgb(46 55 66);
+}
+
+.rating-state__title {
+  margin-bottom: 12px;
+}
+
+.rating-state__description {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--medium-grey);
+}
+
+.rating-state__ratings {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 22px 0;
+  list-style: none;
+}
+
+.rating-state__ratings input[type='radio'] {
+  display: none;
+}
+
+.rating-state__ratings label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  color: var(--medium-grey);
+  background-color: rgb(46 55 66);
+  cursor: pointer;
+}
+
+.rating-state__ratings input[type='radio']:checked ~ label {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+
+.rating-state__ratings label:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.rating-state__submit {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.rating-state__submit:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
