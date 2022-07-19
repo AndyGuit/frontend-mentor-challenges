@@ -11,12 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
     <form class="rating-form">
-      <section class="rating-state disabled">
+      <section class="rating-state">
         <!-- Rating state start -->
         <img
           src="./images/icon-star.svg"
@@ -29,30 +30,30 @@
         </p>
         <ul class="rating-state__ratings">
           <li class="rating-state__rating">
-            <input type="radio" name="rating" id="rate1" />
+            <input type="radio" name="rating" id="rate1" value="1" />
             <label for="rate1">1</label>
           </li>
           <li class="rating-state__rating">
-            <input type="radio" name="rating" id="rate2" />
+            <input type="radio" name="rating" id="rate2" value="2" />
             <label for="rate2">2</label>
           </li>
           <li class="rating-state__rating">
-            <input type="radio" name="rating" id="rate3" />
+            <input type="radio" name="rating" id="rate3" value="3" />
             <label for="rate3">3</label>
           </li>
           <li class="rating-state__rating">
-            <input type="radio" name="rating" id="rate4" />
+            <input type="radio" name="rating" id="rate4" value="4" />
             <label for="rate4">4</label>
           </li>
           <li class="rating-state__rating">
-            <input type="radio" name="rating" id="rate5" />
+            <input type="radio" name="rating" id="rate5" value="5" />
             <label for="rate5">5</label>
           </li>
         </ul>
         <button class="rating-state__submit">Submit</button>
         <!-- Rating state end -->
       </section>
-      <section class="thank-you-state">
+      <section class="thank-you-state disabled">
         <!-- Thank you state start -->
         <img
           class="thank-you-state__img"
@@ -60,7 +61,7 @@
           alt="thank you" />
         <p class="thank-you-state__selected">
           You selected
-          <span class="thank-you-state__rating">4</span>
+          <span class="thank-you-state__selected-rating">4</span>
           out of 5
         </p>
         <h2 class="thank-you-state__title">Thank you!</h2>

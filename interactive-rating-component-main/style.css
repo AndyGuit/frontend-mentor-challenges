@@ -28,7 +28,7 @@ body {
   color: var(--white);
 }
 
-.disabled {
+section.disabled {
   display: none;
 }
 
@@ -80,6 +80,7 @@ body {
   color: var(--light-grey);
   background-color: var(--el-background);
   cursor: pointer;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in;
 }
 
 .rating-state__ratings input[type='radio']:checked ~ label {
@@ -103,6 +104,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  transition: color 0.15s ease-in, background-color 0.15s ease-in;
 }
 
 .rating-state__submit:hover {
