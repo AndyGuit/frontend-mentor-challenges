@@ -5,6 +5,7 @@
 | 01  | [FAQ Accordion Card without JS](#faq-accordion-card-without-js) | [URL](https://faq-accordion-card-delta-ten.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/faq-accordion-card-main) |
 | 02  | [Article preview component](#article-preview-component) | [URL](https://article-preview-component-brown.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/article-preview-component-master) |
 | 03  | [Single price grid component](#single-price-grid-component) | [URL](https://single-price-grid-component-lime-one.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master) |
+| 04  | [Interactive rating component](#interactive-rating-component) | [URL](https://interactive-rating-component-lovat-theta.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/interactive-rating-component-main) |
 
 
 ## FAQ Accordion Card without JS
@@ -27,3 +28,10 @@
 - GitHub Repo: [Single price grid component](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master)
 
 ![Desktop](single-price-grid-component-master/solution_desktop.jpg)
+
+## Interactive rating component
+
+- Live Site URL: [Interactive rating component](https://interactive-rating-component-lovat-theta.vercel.app/)
+- GitHub Repo: [Interactive rating component](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/interactive-rating-component-main)
+
+![Desktop](interactive-rating-component-main/solution_desktop.jpg)

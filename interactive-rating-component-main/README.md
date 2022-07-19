@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Interactive rating component](https://your-live-site-url.com)
+- Live Site URL: [Interactive rating component](https://interactive-rating-component-lovat-theta.vercel.app/)
 
 ## My process
 
