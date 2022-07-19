@@ -16,7 +16,7 @@
   </head>
   <body>
     <form class="rating-form">
-      <section class="rating-state">
+      <section class="rating-state disabled">
         <!-- Rating state start -->
         <img
           src="./images/icon-star.svg"
@@ -52,12 +52,15 @@
         <button class="rating-state__submit">Submit</button>
         <!-- Rating state end -->
       </section>
-      <section class="thank-you-state disabled">
+      <section class="thank-you-state">
         <!-- Thank you state start -->
-        <img src="./images/illustration-thank-you.svg" alt="thank you" />
-        <p class="thank-you__selected">
+        <img
+          class="thank-you-state__img"
+          src="./images/illustration-thank-you.svg"
+          alt="thank you" />
+        <p class="thank-you-state__selected">
           You selected
-          <span class="thank-you-state__rating"></span>
+          <span class="thank-you-state__rating">4</span>
           out of 5
         </p>
         <h2 class="thank-you-state__title">Thank you!</h2>
