@@ -142,3 +142,61 @@ section.disabled {
   line-height: 22px;
   text-align: center;
 }
+
+@media (min-width: 40rem) {
+  .rating-form {
+    max-width: 410px;
+    padding: 34px 42px 30px 32px;
+  }
+
+  .rating-state__img {
+    width: 44px;
+    margin-bottom: 27px;
+  }
+
+  .rating-state__title {
+    font-size: 27px;
+  }
+
+  .rating-state__description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .rating-state__ratings {
+    margin: 30px 0;
+  }
+
+  .rating-state__ratings label {
+    width: 46px;
+    height: 46px;
+  }
+
+  .rating-state__submit {
+    letter-spacing: 3px;
+  }
+
+  .thank-you-state {
+    padding: 12px 0 15px;
+  }
+
+  .thank-you-state__img {
+    width: 160px;
+    margin-bottom: 30px;
+  }
+
+  .thank-you-state__selected {
+    padding: 8px 16px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .thank-you-state__title {
+    font-size: 27px;
+  }
+
+  .thank-you-state__description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
