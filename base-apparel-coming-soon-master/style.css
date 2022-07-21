@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: rgb(64, 59, 59);
+  --primary-gradient: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 100%, 98%) 100%
+  );
+  --secondary-gradient: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%) 0%,
+    rgb(238, 140, 140) 100%
+  );
+}
+
+.disabled {
+  display: none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100vh;
+  background: var(--primary-gradient);
+}
+
+.header {
+  padding: 30px;
+  /* background: var(--primary-gradient); */
+}
+
+.header__logo {
+  width: 100px;
+}
+
+.hero {
+  background: url(./images/hero-mobile.jpg) no-repeat center/cover;
+  height: 250px;
+}
+
+.main {
+  height: calc(100% - 250px - 85px);
+  padding: 30px 40px 30px 30px;
+  /* background: var(--primary-gradient); */
+}
+
+.main__title::first-line {
+  color: var(--desaturated-red);
+  font-weight: 300;
+}
+
+.main__title {
+  margin: 35px 0 17px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 11px;
+}
+
+.main__text {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--desaturated-red);
+  margin-bottom: 35px;
+}
+
+.main__form {
+  position: relative;
+}
+
+.main__form input[type='email'] {
+  width: 100%;
+  padding: 15px 65px 15px 25px;
+  border: 1px solid rgba(64, 59, 59, 0.3);
+  border-radius: 50px;
+  background-color: transparent;
+  font-family: 'Josefin Sans', sans-serif;
+  color: var(--desaturated-red);
+}
+
+.main__form input[type='email']::placeholder {
+  opacity: 0.5;
+  color: var(--desaturated-red);
+}
+
+.main__form input[type='email']:focus {
+  outline: none;
+}
+
+.main__form button {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  padding: 12px 26px;
+  border: none;
+  border-radius: 50px;
+  background: rgb(238, 140, 140);
+  box-shadow: 0 12px 25px rgb(224 209 209);
+  cursor: pointer;
+}
+
+.main__form button:hover,
+.main__form button:active {
+  background: rgb(233 175 175);
+}

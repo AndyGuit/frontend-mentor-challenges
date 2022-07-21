@@ -16,25 +16,38 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="logo" />
+    </header>
     <aside class="hero"></aside>
     <main class="main">
-      <h1 class="main__title">We're coming soon</h1>
+      <h1 class="main__title">
+        We're<br />
+        coming<br />
+        soon
+      </h1>
       <p class="main__text">
         Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
-      <form>
-        <input type="email" name="" id="email" />
-        <label class="error-text" for="email"
-          >Please provide a valid email</label
-        >
-        <img class="error-icon" src="./images/icon-error.svg" alt="error" />
-        <button type="submit"></button>
+      <form class="main__form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Address" />
+        <label class="error-text disabled" for="email">
+          Please provide a valid email
+        </label>
+        <img
+          class="error-icon disabled"
+          src="./images/icon-error.svg"
+          alt="error" />
+        <button type="submit">
+          <img src="./images/icon-arrow.svg" alt="submit" />
+        </button>
       </form>
     </main>
-
-    Email Address
   </body>
 </html>
