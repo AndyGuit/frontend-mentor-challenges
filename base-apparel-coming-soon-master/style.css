@@ -88,7 +88,7 @@ body {
   position: relative;
 }
 
-.main__form input[type='email'] {
+.form__email {
   width: 100%;
   padding: 15px 65px 15px 25px;
   border: 1px solid rgba(64, 59, 59, 0.3);
@@ -98,13 +98,17 @@ body {
   color: var(--desaturated-red);
 }
 
-.main__form input[type='email']::placeholder {
+.form__email::placeholder {
   opacity: 0.5;
   color: var(--desaturated-red);
 }
 
-.main__form input[type='email']:focus {
+.form__email:focus {
   outline: none;
+}
+
+.form__email--invalid {
+  border-color: var(--soft-red);
 }
 
 .main__form button {
@@ -124,6 +128,20 @@ body {
 .main__form button:hover,
 .main__form button:active {
   background: rgb(233 175 175);
+}
+
+.main__form .error-text {
+  position: absolute;
+  bottom: -25px;
+  left: 25px;
+  color: var(--soft-red);
+}
+
+.main__form .error-icon {
+  position: absolute;
+  top: 50%;
+  right: 22%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 768px) {
@@ -173,7 +191,7 @@ body {
     text-align: left;
   }
 
-  .main__form input[type='email'] {
+  .form__email {
     font-size: 16px;
     padding: 20px 65px 20px 30px;
   }
@@ -208,5 +226,11 @@ body {
 
   .main {
     padding: 25px 230px 30px 25px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .container {
+    margin: 0 auto;
   }
 }
