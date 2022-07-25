@@ -4,6 +4,7 @@ const form = document.querySelector('form.main__form');
 const inputEmail = document.querySelector('.form__email');
 
 const validateEmail = (value) => {
+  // https://www.w3resource.com/javascript/form/email-validation.php
   const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   return regex.test(value);
 }
