@@ -132,15 +132,17 @@ body {
 
 .main__form .error-text {
   position: absolute;
-  bottom: -25px;
-  left: 25px;
+  font-size: 14px;
+  bottom: -22px;
+  left: 31px;
+  letter-spacing: -0.4px;
   color: var(--soft-red);
 }
 
 .main__form .error-icon {
   position: absolute;
   top: 50%;
-  right: 22%;
+  right: 24%;
   transform: translateY(-50%);
 }
 
