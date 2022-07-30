@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: rgb(56, 204, 140);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: rgb(62, 60, 73);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-image: url(images/bg-intro-mobile.png);
+  background-color: var(--red);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+  margin: 94px auto 0;
+}
+
+.text-container {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.title {
+  font-size: 27px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+.text {
+  line-height: 1.6;
+}
+
+.form-card {
+  background-color: var(--blue);
+  margin-bottom: 20px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 0 rgba(62, 60, 73, 0.25);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.text-higlight {
+  font-weight: 600;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 23px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 0 rgba(62, 60, 73, 0.25);
+  color: var(--grayish-blue);
+  margin-bottom: 100px;
+}
+
+.sign-up-form input {
+  padding: 18px 18px;
+  margin-bottom: 16px;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.sign-up-form input:focus-visible {
+  border: 2px solid var(--dark-blue);
+  outline: none;
+}
+
+.sign-up-form button {
+  color: #fff;
+  background-color: var(--green);
+  border: 2px solid #0e970e;
+  border-radius: 5px;
+  padding: 20px 20px 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.sign-up-form button:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 10px rgb(62 60 73 / 40%);
+}
+
+.sign-up-form__terms {
+  padding: 0 20px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.sign-up-form__terms-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--red);
+  transition: opacity 0.3s;
+}
+
+.sign-up-form__terms-link:hover {
+  opacity: 0.7;
+}
