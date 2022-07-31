@@ -26,8 +26,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0 25px;
-  margin: 94px auto 0;
+  padding: 0 25px 25px;
+  margin: 0 auto;
 }
 
 .text-container {
@@ -121,7 +121,7 @@ body {
   opacity: 0.7;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .container {
     padding: 30px;
     max-width: 1170px;
@@ -171,5 +171,11 @@ body {
 
   .sign-up-form button {
     margin-bottom: 15px;
+  }
+}
+
+@media (min-height: 700px) {
+  .container {
+    margin-top: 95px;
   }
 }
