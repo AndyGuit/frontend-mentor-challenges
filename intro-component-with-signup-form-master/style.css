@@ -26,7 +26,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 325px;
+  padding: 0 25px;
   margin: 94px auto 0;
 }
 
@@ -47,8 +47,8 @@ body {
 
 .form-card {
   background-color: var(--blue);
-  margin-bottom: 20px;
-  padding: 20px 50px;
+  margin-bottom: 25px;
+  padding: 18px 50px;
   border-radius: 10px;
   box-shadow: 0 10px 0 rgba(62, 60, 73, 0.25);
   text-align: center;
@@ -67,7 +67,7 @@ body {
   background-color: #fff;
   box-shadow: 0 10px 0 rgba(62, 60, 73, 0.25);
   color: var(--grayish-blue);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .sign-up-form input {
@@ -89,7 +89,7 @@ body {
   background-color: var(--green);
   border: 2px solid #0e970e;
   border-radius: 5px;
-  padding: 20px 20px 20px;
+  padding: 20px 20px 18px;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -119,4 +119,57 @@ body {
 
 .sign-up-form__terms-link:hover {
   opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 30px;
+    max-width: 1170px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    flex: 0 1 500px;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 49px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+  }
+
+  .form-container {
+    align-self: center;
+    flex: 0 1 540px;
+  }
+
+  .form-card {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .sign-up-form {
+    padding: 40px 40px;
+    margin-bottom: 0;
+  }
+
+  .sign-up-form input {
+    padding: 18px 29px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .sign-up-form input::placeholder {
+    letter-spacing: 0;
+  }
+
+  .sign-up-form button {
+    margin-bottom: 15px;
+  }
 }
