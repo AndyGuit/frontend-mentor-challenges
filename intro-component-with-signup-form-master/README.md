@@ -33,7 +33,7 @@ Your users should be able to:
 
 ### Links
 
-- Live Site URL: [Intro component with sign up form](https://interactive-rating-component-lovat-theta.vercel.app/)
+- Live Site URL: [Intro component with sign up form](https://intro-component-with-signup-form-omega.vercel.app/)
 
 ## My process
 
