@@ -7,6 +7,7 @@
 | 03  | [Single price grid component](#single-price-grid-component) | [URL](https://single-price-grid-component-lime-one.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master) |
 | 04  | [Interactive rating component](#interactive-rating-component) | [URL](https://interactive-rating-component-lovat-theta.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/interactive-rating-component-main) |
 | 05  | [Base Apparel coming soon page](#base-apparel-coming-soon-page) | [URL](https://base-apparel-coming-soon-two-tawny.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/base-apparel-coming-soon-master) |
+| 06  | [Intro component with sign up form](#base-apparel-coming-soon-page) | [URL](https://base-apparel-coming-soon-two-tawny.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/base-apparel-coming-soon-master) |
 
 
 ## FAQ Accordion Card without JS
@@ -44,3 +45,10 @@
 - GitHub Repo: [Base Apparel coming soon page](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/base-apparel-coming-soon-master)
 
 ![Desktop](base-apparel-coming-soon-master/solution_desktop.jpg)
+
+## Intro component with sign up form
+
+- Live Site URL: [Intro component with sign up form](https://base-apparel-coming-soon-two-tawny.vercel.app/)
+- GitHub Repo: [Intro component with sign up form](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/base-apparel-coming-soon-master)
+
+![Desktop](intro-component-with-signup-form-master/solution_desktop.jpg)
