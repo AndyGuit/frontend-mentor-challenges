@@ -70,7 +70,48 @@ body {
   margin-bottom: 50px;
 }
 
+.sign-up-form__field {
+  position: relative;
+}
+
+.sign-up-form__field i {
+  display: none;
+  position: absolute;
+  top: calc(50% - 17px);
+  right: 25px;
+  transform: translateY(-50%);
+}
+
+.sign-up-form__field small {
+  display: none;
+  position: absolute;
+  bottom: 19px;
+  right: 0;
+  font-size: 11px;
+  font-style: italic;
+  color: var(--red);
+}
+
+.sign-up-form__field.invalid i {
+  display: block;
+}
+
+.sign-up-form__field.invalid input {
+  color: var(--red);
+  border: 2px solid var(--red);
+  margin-bottom: 40px;
+}
+
+.sign-up-form__field.invalid input::placeholder {
+  color: transparent;
+}
+
+.sign-up-form__field.invalid small {
+  display: block;
+}
+
 .sign-up-form input {
+  width: 100%;
   padding: 18px 18px;
   margin-bottom: 16px;
   border: 1px solid var(--grayish-blue);
@@ -95,12 +136,13 @@ body {
   letter-spacing: 1px;
   font-weight: 600;
   cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.3s;
+  transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s;
 }
 
 .sign-up-form button:hover {
   transform: scale(1.02);
   box-shadow: 0px 8px 10px rgb(62 60 73 / 40%);
+  opacity: 0.7;
 }
 
 .sign-up-form__terms {

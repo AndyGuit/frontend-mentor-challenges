@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
 
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
@@ -30,10 +31,58 @@
           thereafter
         </figure>
         <form class="sign-up-form">
-          <input type="text" id="first-name" placeholder="First Name" />
-          <input type="text" id="last-name" placeholder="Last Name" />
-          <input type="email" id="email" placeholder="Email Address" />
-          <input type="password" id="password" placeholder="Password" />
+          <div class="sign-up-form__field">
+            <input type="text" id="first-name" placeholder="First Name" />
+            <small>First Name cannot be empty</small>
+            <i>
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </i>
+          </div>
+          <div class="sign-up-form__field">
+            <input type="text" id="last-name" placeholder="Last Name" />
+            <small></small>
+            <i>
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </i>
+          </div>
+          <div class="sign-up-form__field">
+            <input type="email" id="email" placeholder="Email Address" />
+            <small></small>
+            <i>
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </i>
+          </div>
+          <div class="sign-up-form__field">
+            <input type="password" id="password" placeholder="Password" />
+            <small></small>
+            <i>
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                  <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                  <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+                </g>
+              </svg>
+            </i>
+          </div>
           <button type="submit">Claim your free trial</button>
           <p class="sign-up-form__terms">
             By clicking the button, you are agreeing to our
