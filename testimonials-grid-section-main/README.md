@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Testimonials grid section](https://single-price-grid-component-lime-one.vercel.app/)
+- Live Site URL: [Testimonials grid section](https://testimonials-grid-section-main-seven-blush.vercel.app/)
 
 ## My process
 
