@@ -34,12 +34,12 @@
           </div>
         </div>
         <div class="dashboard__controls">
-          <button>Daily</button>
-          <button class="active">Weekly</button>
-          <button>Monthly</button>
+          <button id="daily">Daily</button>
+          <button id="weekly" class="active">Weekly</button>
+          <button id="monthly">Monthly</button>
         </div>
       </aside>
-      <div class="dashboard__card dashboard__card--work">
+      <div data-title="Work" class="dashboard__card dashboard__card--work">
         <img src="./images/icon-work.svg" alt="icon-work" />
         <div class="card__content">
           <div class="card__header">
@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="dashboard__card dashboard__card--play">
+      <div data-title="Play" class="dashboard__card dashboard__card--play">
         <img src="./images/icon-play.svg" alt="" />
         <div class="card__content">
           <div class="card__header">
@@ -65,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="dashboard__card dashboard__card--study">
+      <div data-title="Study" class="dashboard__card dashboard__card--study">
         <img src="./images/icon-study.svg" alt="icon-work" />
         <div class="card__content">
           <div class="card__header">
@@ -78,7 +78,9 @@
           </div>
         </div>
       </div>
-      <div class="dashboard__card dashboard__card--exercise">
+      <div
+        data-title="Exercise"
+        class="dashboard__card dashboard__card--exercise">
         <img src="./images/icon-exercise.svg" alt="icon-work" />
         <div class="card__content">
           <div class="card__header">
@@ -91,7 +93,7 @@
           </div>
         </div>
       </div>
-      <div class="dashboard__card dashboard__card--social">
+      <div data-title="Social" class="dashboard__card dashboard__card--social">
         <img src="./images/icon-social.svg" alt="icon-work" />
         <div class="card__content">
           <div class="card__header">
@@ -104,7 +106,9 @@
           </div>
         </div>
       </div>
-      <div class="dashboard__card dashboard__card--self-care">
+      <div
+        data-title="Self Care"
+        class="dashboard__card dashboard__card--self-care">
         <img src="./images/icon-self-care.svg" alt="icon-work" />
         <div class="card__content">
           <div class="card__header">
