@@ -1,16 +1,15 @@
 # Frontend Mentor - My solutions to challenges
 
-|  #  |                            Challenge                            |                        Live Demo                        |                                                 GitHub                                                 |
-| :-: | :-------------------------------------------------------------: | :-----------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
-| 01  | [FAQ Accordion Card without JS](#faq-accordion-card-without-js) | [URL](https://faq-accordion-card-delta-ten.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/faq-accordion-card-main) |
-| 02  | [Article preview component](#article-preview-component) | [URL](https://article-preview-component-brown.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/article-preview-component-master) |
-| 03  | [Single price grid component](#single-price-grid-component) | [URL](https://single-price-grid-component-lime-one.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master) |
-| 04  | [Interactive rating component](#interactive-rating-component) | [URL](https://interactive-rating-component-lovat-theta.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/interactive-rating-component-main) |
-| 05  | [Base Apparel coming soon page](#base-apparel-coming-soon-page) | [URL](https://base-apparel-coming-soon-two-tawny.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/base-apparel-coming-soon-master) |
-| 06  | [Intro component with sign up form](#intro-component-with-sign-up-form) | [URL](https://intro-component-with-signup-form-omega.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
-| 07  | [Testimonials grid section](#testimonials-grid-section) | [URL](https://intro-component-with-signup-form-omega.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
-| 08  | [Time tracking dashboard](#time-tracking-dashboard) | [URL](https://intro-component-with-signup-form-omega.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main) |
-
+|  #  |                                Challenge                                |                              Live Demo                              |                                                       GitHub                                                       |
+| :-: | :---------------------------------------------------------------------: | :-----------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------: |
+| 01  |     [FAQ Accordion Card without JS](#faq-accordion-card-without-js)     |       [URL](https://faq-accordion-card-delta-ten.vercel.app/)       |         [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/faq-accordion-card-main)         |
+| 02  |         [Article preview component](#article-preview-component)         |     [URL](https://article-preview-component-brown.vercel.app/)      |    [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/article-preview-component-master)     |
+| 03  |       [Single price grid component](#single-price-grid-component)       |   [URL](https://single-price-grid-component-lime-one.vercel.app/)   |   [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/single-price-grid-component-master)    |
+| 04  |      [Interactive rating component](#interactive-rating-component)      | [URL](https://interactive-rating-component-lovat-theta.vercel.app/) |    [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/interactive-rating-component-main)    |
+| 05  |     [Base Apparel coming soon page](#base-apparel-coming-soon-page)     |    [URL](https://base-apparel-coming-soon-two-tawny.vercel.app/)    |     [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/base-apparel-coming-soon-master)     |
+| 06  | [Intro component with sign up form](#intro-component-with-sign-up-form) |  [URL](https://intro-component-with-signup-form-omega.vercel.app/)  | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
+| 07  |         [Testimonials grid section](#testimonials-grid-section)         |  [URL](https://intro-component-with-signup-form-omega.vercel.app/)  | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
+| 08  |           [Time tracking dashboard](#time-tracking-dashboard)           |    [URL](https://time-tracking-dashboard-eight-rho.vercel.app/)     |      [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)       |
 
 ## FAQ Accordion Card without JS
 
@@ -40,7 +39,6 @@
 
 ![Desktop](interactive-rating-component-main/solution_desktop.jpg)
 
-
 ## Base Apparel coming soon page
 
 - Live Site URL: [Base Apparel coming soon page](https://base-apparel-coming-soon-two-tawny.vercel.app/)
@@ -64,7 +62,7 @@
 
 ## Time tracking dashboard
 
-- Live Site URL: [Testimonials grid section](https://testimonials-grid-section-main-seven-blush.vercel.app/)
+- Live Site URL: [Testimonials grid section](https://time-tracking-dashboard-eight-rho.vercel.app/)
 - GitHub Repo: [Testimonials grid section](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)
 
 ![Desktop](time-tracking-dashboard-main/solution_desktop.jpg)
