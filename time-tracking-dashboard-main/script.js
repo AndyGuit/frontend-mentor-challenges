@@ -15,12 +15,12 @@ const getData = async function () {
 // Assign data to variable
 (async () => {
   dashboardData = await getData();
-})()
+})();
 
 const changeCurrentActiveBtn = function (id) {
   dashboardBtns.forEach(btn => btn.classList.remove('active'));
   document.getElementById(id).classList.add('active');
-}
+};
 
 const displayData = function (e) {
   const type = e.target.id;
