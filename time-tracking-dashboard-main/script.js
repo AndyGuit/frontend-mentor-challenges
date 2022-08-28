@@ -23,6 +23,8 @@ const changeCurrentActiveBtn = function (id) {
 };
 
 const displayData = function (e) {
+  if (!dashboardData) return;
+
   const type = e.target.id;
 
   changeCurrentActiveBtn(type);
