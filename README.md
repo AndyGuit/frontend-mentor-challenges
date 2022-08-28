@@ -9,6 +9,7 @@
 | 05  | [Base Apparel coming soon page](#base-apparel-coming-soon-page) | [URL](https://base-apparel-coming-soon-two-tawny.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/base-apparel-coming-soon-master) |
 | 06  | [Intro component with sign up form](#intro-component-with-sign-up-form) | [URL](https://intro-component-with-signup-form-omega.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
 | 07  | [Testimonials grid section](#testimonials-grid-section) | [URL](https://intro-component-with-signup-form-omega.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
+| 08  | [Time tracking dashboard](#time-tracking-dashboard) | [URL](https://intro-component-with-signup-form-omega.vercel.app/) | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main) |
 
 
 ## FAQ Accordion Card without JS
@@ -60,3 +61,10 @@
 - GitHub Repo: [Testimonials grid section](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/testimonials-grid-section-main)
 
 ![Desktop](testimonials-grid-section-main/solution_desktop.jpg)
+
+## Time tracking dashboard
+
+- Live Site URL: [Testimonials grid section](https://testimonials-grid-section-main-seven-blush.vercel.app/)
+- GitHub Repo: [Testimonials grid section](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)
+
+![Desktop](time-tracking-dashboard-main/solution_desktop.jpg)
