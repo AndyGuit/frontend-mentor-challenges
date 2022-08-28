@@ -62,7 +62,7 @@
 
 ## Time tracking dashboard
 
-- Live Site URL: [Testimonials grid section](https://time-tracking-dashboard-eight-rho.vercel.app/)
-- GitHub Repo: [Testimonials grid section](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)
+- Live Site URL: [Time tracking dashboard](https://time-tracking-dashboard-eight-rho.vercel.app/)
+- GitHub Repo: [Time tracking dashboard](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)
 
 ![Desktop](time-tracking-dashboard-main/solution_desktop.jpg)
