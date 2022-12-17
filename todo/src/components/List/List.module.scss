@@ -1,0 +1,40 @@
+.todoList {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.todoListControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px 10px 20px;
+  position: relative;
+
+  button {
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+  }
+}
+
+.todoListBtns {
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
+
+  @media (max-width: 480px) {
+    position: absolute;
+    top: 65px;
+    left: 0;
+
+    justify-content: center;
+    width: 100%;
+    padding: 10px 25px 10px 20px;
+    box-shadow: 0px 0px 10px rgb(22, 23, 34);
+  }
+}
+
+.todoListInfo {
+  font-size: 0.8em;
+}

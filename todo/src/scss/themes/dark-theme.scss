@@ -1,0 +1,84 @@
+.dark {
+  background-color: $dark-bg-main;
+
+  .bg-container {
+    background: url('../../assets/img/bg-desktop-dark.jpg') 0% / cover no-repeat;
+
+    @media (max-width: 480px) {
+      background: url('../../assets/img/bg-mobile-dark.jpg') 0% / cover
+        no-repeat;
+    }
+  }
+
+  .todo-header {
+    color: $dark-header-main;
+  }
+
+  .todo-input {
+    background-color: $dark-bg-todo;
+    color: $dark-todo-text;
+
+    &::placeholder {
+      color: $dark-todo-controls;
+    }
+  }
+
+  .todo-input-wrapper,
+  .todo-list-item {
+    &:hover {
+      .todo-circle {
+        background: $primary-gradient;
+      }
+    }
+    .todo-circle {
+      background: $dark-circle;
+
+      &:before {
+        background-color: $dark-bg-todo;
+      }
+    }
+  }
+
+  .todo-list {
+    background-color: $dark-bg-todo;
+  }
+
+  .todo-list-info,
+  button.todo-list-clear {
+    color: $dark-todo-controls;
+  }
+
+  .todo-list-control {
+    color: $dark-todo-controls-btn;
+  }
+
+  button.todo-list-clear:hover,
+  .todo-list-control:hover {
+    color: $dark-todo-text-hover;
+  }
+
+  .todo-list-control.active {
+    color: $primary-color;
+  }
+
+  .todo-list-item {
+    color: $dark-todo-text;
+    border-color: $dark-circle;
+  }
+
+  .todo-list-item.completed {
+    color: $dark-todo-controls;
+    .todo-circle {
+      background: $primary-gradient;
+    }
+  }
+
+  .todo-input-wrapper,
+  .todo-list {
+    box-shadow: 0px 0px 10px $dark-bg-main;
+  }
+
+  .todo-list-btns {
+    background-color: $dark-bg-todo;
+  }
+}

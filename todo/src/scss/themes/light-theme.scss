@@ -1,0 +1,85 @@
+.light {
+  background-color: $light-bg-main;
+
+  .bg-container {
+    background: url('../../assets/img/bg-desktop-light.jpg') 0% / cover
+      no-repeat;
+
+    @media (max-width: 480px) {
+      background: url('../../assets/img/bg-mobile-light.jpg') 0% / cover
+        no-repeat;
+    }
+  }
+
+  .todo-header {
+    color: $light-header-main;
+  }
+
+  .todo-input {
+    background-color: $light-header-main;
+    color: $light-text-main;
+
+    &::placeholder {
+      color: $light-text-secondary;
+    }
+  }
+
+  .todo-input-wrapper,
+  .todo-list-item {
+    &:hover {
+      .todo-circle {
+        background: $primary-gradient;
+      }
+    }
+    .todo-circle {
+      background: $light-circle;
+
+      &:before {
+        background-color: $light-header-main;
+      }
+    }
+  }
+
+  .todo-list {
+    background-color: $light-header-main;
+  }
+
+  .todo-list-info,
+  button.todo-list-clear {
+    color: $light-text-secondary;
+  }
+
+  .todo-list-control {
+    color: $light-text-secondary;
+  }
+
+  button.todo-list-clear:hover,
+  .todo-list-control:hover {
+    color: $light-text-main;
+  }
+
+  .todo-list-control.active {
+    color: $primary-color;
+  }
+
+  .todo-list-item {
+    color: $light-text-main;
+    border-color: $light-circle;
+  }
+
+  .todo-list-item.completed {
+    color: $light-circle;
+    .todo-circle {
+      background: $primary-gradient;
+    }
+  }
+
+  .todo-input-wrapper,
+  .todo-list {
+    box-shadow: 0px 0px 10px $light-text-secondary;
+  }
+
+  .todo-list-btns {
+    background-color: $light-header-main;
+  }
+}
