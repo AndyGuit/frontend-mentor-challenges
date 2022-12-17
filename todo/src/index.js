@@ -1,13 +1,16 @@
+import './assets/fonts/JosefinSans-Bold.ttf';
+import './assets/fonts/JosefinSans-Regular.ttf';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-import './assets/fonts/JosefinSans-Bold.ttf';
-import './assets/fonts/JosefinSans-Regular.ttf';
+import { store } from './redux/store';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
 );
