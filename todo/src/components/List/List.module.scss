@@ -38,3 +38,8 @@
 .todoListInfo {
   font-size: 0.8em;
 }
+
+.listUl {
+  max-height: 420px;
+  overflow-y: scroll;
+}

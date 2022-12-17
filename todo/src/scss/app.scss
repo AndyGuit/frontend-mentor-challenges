@@ -99,6 +99,22 @@ input {
   }
 }
 
+.todo-list-item {
+  .todo-item-remove {
+    display: none;
+    position: absolute;
+    top: 22px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    .todo-item-remove {
+      display: block;
+    }
+  }
+}
+
 .todo-list-item.completed {
   text-decoration: line-through;
 
