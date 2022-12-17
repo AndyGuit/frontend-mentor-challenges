@@ -9,11 +9,14 @@ const Input = () => {
   const [value, setValue] = React.useState('');
 
   const addTodoItem = () => {
-    if (value) dispatch(addTodo(value));
+    if (value) {
+      dispatch(addTodo(value));
+      setValue('');
+    }
   };
 
   const addTodoOnEnter = e => {
-    if (e.code === 'Enter') addTodoItem();
+    if (e.code === 'Enter' || e.code === 'NumpadEnter') addTodoItem();
   };
 
   return (

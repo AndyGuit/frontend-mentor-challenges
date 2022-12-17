@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setCompleted } from '../../redux/slices/todoListSlice';
+import { setCompleted, deleteTodo } from '../../redux/slices/todoListSlice';
 
 import styles from './ListItem.module.scss';
 
@@ -14,7 +14,9 @@ const ListItem = ({ text, isCompleted, id }) => {
         <img src="./icons/icon-check.svg" alt="check" />
       </span>
       {text}
-      <span className="todo-item-remove">
+      <span
+        onClick={() => dispatch(deleteTodo(id))}
+        className="todo-item-remove">
         <img src="./icons/icon-cross.svg" alt="Remove" />
       </span>
     </li>
