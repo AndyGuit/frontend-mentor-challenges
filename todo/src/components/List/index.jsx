@@ -2,7 +2,11 @@ import styles from './List.module.scss';
 
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setActiveFilter, filterTodo } from '../../redux/slices/todoListSlice';
+import {
+  setActiveFilter,
+  filterTodo,
+  clearCompleted,
+} from '../../redux/slices/todoListSlice';
 
 import ListItem from '../ListItem';
 
@@ -44,7 +48,11 @@ const List = () => {
             </button>
           ))}
         </div>
-        <button className="todo-list-clear">Clear Completed</button>
+        <button
+          onClick={() => dispatch(clearCompleted())}
+          className="todo-list-clear">
+          Clear Completed
+        </button>
       </div>
     </div>
   );

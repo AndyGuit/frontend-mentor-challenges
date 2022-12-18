@@ -52,6 +52,10 @@ export const todoListSlice = createSlice({
     setActiveFilter: (state, action) => {
       state.activeFilter = action.payload;
     },
+
+    clearCompleted: state => {
+      state.todos = state.todos.filter(todo => !todo.isCompleted);
+    },
   },
 });
 
@@ -61,6 +65,7 @@ export const {
   deleteTodo,
   filterTodo,
   setActiveFilter,
+  clearCompleted,
 } = todoListSlice.actions;
 
 export default todoListSlice.reducer;
