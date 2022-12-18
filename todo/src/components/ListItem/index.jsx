@@ -8,9 +8,13 @@ const ListItem = ({ text, isCompleted, id }) => {
   const dispatch = useDispatch();
   const completed = isCompleted ? 'completed' : '';
 
+  const completeTodo = id => {
+    dispatch(setCompleted(id));
+  };
+
   return (
-    <li id={id} className={`todo-list-item ${completed} ${styles.listItem}`}>
-      <span onClick={() => dispatch(setCompleted(id))} className="todo-circle">
+    <li className={`todo-list-item ${completed} ${styles.listItem}`}>
+      <span onClick={() => completeTodo(id)} className="todo-circle">
         <img src="./icons/icon-check.svg" alt="check" />
       </span>
       {text}
