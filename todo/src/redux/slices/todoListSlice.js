@@ -1,14 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+import { loadState, saveState, setState } from '../helpers/localStorage';
+
 const initialState = {
-  todos: [
-    { id: 0, isCompleted: true, text: 'Complete online JavaScript course' },
-    { id: 1, isCompleted: false, text: 'Jog around the park 3x' },
-    { id: 2, isCompleted: false, text: '10 minutes meditation' },
-    { id: 3, isCompleted: false, text: 'Read for 1 hour' },
-    { id: 4, isCompleted: false, text: 'Pick up groceries' },
-    { id: 5, isCompleted: false, text: 'Complete Todo App on Frontend Mentor' },
-  ],
+  todos: loadState(),
   filters: ['All', 'Active', 'Completed'],
   activeFilter: 'All',
   filteredTodos: [],
@@ -24,16 +19,22 @@ export const todoListSlice = createSlice({
         isCompleted: false,
         text: action.payload,
       });
+
+      saveState(state.todos);
     },
 
     setCompleted: (state, action) => {
       state.todos.find(todo => {
         if (todo.id === action.payload) todo.isCompleted = !todo.isCompleted;
       });
+
+      saveState(state.todos);
     },
 
     deleteTodo: (state, action) => {
       state.todos = state.todos.filter(item => item.id !== action.payload);
+
+      saveState(state.todos);
     },
 
     filterTodo: state => {
@@ -55,6 +56,8 @@ export const todoListSlice = createSlice({
 
     clearCompleted: state => {
       state.todos = state.todos.filter(todo => !todo.isCompleted);
+
+      saveState(state.todos);
     },
   },
 });
