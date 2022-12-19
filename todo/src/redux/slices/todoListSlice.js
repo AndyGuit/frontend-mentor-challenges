@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { loadState, saveState, setState } from '../helpers/localStorage';
+import { loadState, saveState } from '../helpers/localStorage';
 
 const initialState = {
   todos: loadState(),
@@ -14,8 +14,10 @@ export const todoListSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state, action) => {
+      const todoId = window.crypto.randomUUID();
+
       state.todos.push({
-        id: state.todos.length,
+        id: todoId,
         isCompleted: false,
         text: action.payload,
       });
