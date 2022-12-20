@@ -8,6 +8,8 @@ import {
   clearCompleted,
 } from '../../redux/slices/todoListSlice';
 
+import { Droppable } from 'react-beautiful-dnd';
+
 import ListItem from '../ListItem';
 
 const List = () => {
@@ -17,6 +19,8 @@ const List = () => {
   const filters = useSelector(state => state.todoList.filters);
   const activeFilter = useSelector(state => state.todoList.activeFilter);
 
+  const droppableId = 'todo-list-id';
+
   // Re-render filtered todos on todo change
   React.useEffect(() => {
     dispatch(filterTodo());
@@ -24,11 +28,19 @@ const List = () => {
 
   return (
     <div className={'todo-list ' + styles.todoList}>
-      <ul className={styles.listUl}>
-        {todoItems.map(item => (
-          <ListItem key={item.id} id={item.id} {...item} />
-        ))}
-      </ul>
+      <Droppable droppableId={droppableId}>
+        {provided => (
+          <ul
+            {...provided.droppableProps}
+            ref={provided.innerRef}
+            className={styles.listUl}>
+            {todoItems.map((item, index) => (
+              <ListItem index={index} key={item.id} id={item.id} {...item} />
+            ))}
+            {provided.placeholder}
+          </ul>
+        )}
+      </Droppable>
       <div className={'todo-list-controls ' + styles.todoListControls}>
         <span className={'todo-list-info ' + styles.todoListInfo}>
           5 items left

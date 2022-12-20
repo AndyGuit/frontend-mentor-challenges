@@ -37,10 +37,8 @@ input {
 }
 
 .App {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 
@@ -55,7 +53,13 @@ input {
   max-width: 540px;
   width: 100%;
   margin: 25px;
+  margin-top: 80px;
   z-index: 1;
+
+  @media (max-width: 480px) {
+    margin: 15px;
+    margin-top: 50px;
+  }
 }
 
 .todo-circle {
@@ -121,5 +125,15 @@ input {
   .todo-circle::before {
     content: '';
     display: none;
+  }
+}
+
+.todo-list-drag-n-drop {
+  margin-top: 50px;
+  font-size: 0.75em;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    margin-top: 80px;
   }
 }

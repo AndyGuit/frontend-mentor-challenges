@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, current } from '@reduxjs/toolkit';
 
 import { loadState, saveState } from '../helpers/localStorage';
 
@@ -61,6 +61,14 @@ export const todoListSlice = createSlice({
 
       saveState(state.todos);
     },
+
+    reorderItems: (state, action) => {
+      const { to, from } = action.payload;
+      const [selectedItem] = state.todos.splice(from, 1);
+      state.todos.splice(to, 0, selectedItem);
+
+      saveState(state.todos);
+    },
   },
 });
 
@@ -71,6 +79,7 @@ export const {
   filterTodo,
   setActiveFilter,
   clearCompleted,
+  reorderItems,
 } = todoListSlice.actions;
 
 export default todoListSlice.reducer;
