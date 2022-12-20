@@ -10,6 +10,7 @@
 | 06  | [Intro component with sign up form](#intro-component-with-sign-up-form) |  [URL](https://intro-component-with-signup-form-omega.vercel.app/)  | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
 | 07  |         [Testimonials grid section](#testimonials-grid-section)         |  [URL](https://intro-component-with-signup-form-omega.vercel.app/)  | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
 | 08  |           [Time tracking dashboard](#time-tracking-dashboard)           |    [URL](https://time-tracking-dashboard-eight-rho.vercel.app/)     |      [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)       |
+| 08  |                              [Todo App](#todo-app)                      |    [URL](https://time-tracking-dashboard-eight-rho.vercel.app/)     |      [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)       |
 
 ## FAQ Accordion Card without JS
 
@@ -66,3 +67,11 @@
 - GitHub Repo: [Time tracking dashboard](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)
 
 ![Desktop](time-tracking-dashboard-main/solution_desktop.jpg)
+
+
+## Todo App
+
+- Live Site URL: [Todo App](https://time-tracking-dashboard-eight-rho.vercel.app/)
+- GitHub Repo: [Todo App](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)
+
+![Desktop](todo/solution_desktop.jpg)
