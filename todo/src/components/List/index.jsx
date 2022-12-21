@@ -18,6 +18,7 @@ const List = () => {
   const todoItems = useSelector(state => state.todoList.filteredTodos);
   const filters = useSelector(state => state.todoList.filters);
   const activeFilter = useSelector(state => state.todoList.activeFilter);
+  const todosLeft = allTodos.filter(todo => !todo.isCompleted).length;
 
   const droppableId = 'todo-list-id';
 
@@ -43,7 +44,7 @@ const List = () => {
       </Droppable>
       <div className={'todo-list-controls ' + styles.todoListControls}>
         <span className={'todo-list-info ' + styles.todoListInfo}>
-          5 items left
+          {todosLeft} items left
         </span>
         <div className={'todo-list-btns ' + styles.todoListBtns}>
           {filters.map((filter, i) => (
