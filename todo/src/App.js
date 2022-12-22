@@ -5,7 +5,7 @@ import { DragDropContext } from 'react-beautiful-dnd';
 
 import { useSelector, useDispatch } from 'react-redux';
 
-import { reorderItems } from './redux/slices/todoListSlice';
+import { reorderItems, filterTodo } from './redux/slices/todoListSlice';
 
 import Header from './components/Header';
 import Input from './components/Input';
@@ -34,6 +34,7 @@ function App() {
     // console.log(destination, source);
 
     dispatch(reorderItems({ to: destination.index, from: source.index }));
+    dispatch(filterTodo());
   };
 
   return (
