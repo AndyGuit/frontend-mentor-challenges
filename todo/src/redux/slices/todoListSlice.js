@@ -6,7 +6,7 @@ const initialState = {
   todos: loadState(),
   filters: ['All', 'Active', 'Completed'],
   activeFilter: 'All',
-  filteredTodos: [],
+  filteredTodos: loadState(),
 };
 
 export const todoListSlice = createSlice({

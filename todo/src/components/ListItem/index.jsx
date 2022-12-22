@@ -1,6 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setCompleted, deleteTodo } from '../../redux/slices/todoListSlice';
+import {
+  setCompleted,
+  deleteTodo,
+  filterTodo,
+} from '../../redux/slices/todoListSlice';
 
 import { Draggable } from 'react-beautiful-dnd';
 
@@ -22,12 +26,20 @@ const ListItem = ({ text, isCompleted, id, index }) => {
           {...draggableProps}
           {...dragHandleProps}
           className={`todo-list-item ${completed} ${styles.listItem}`}>
-          <span onClick={() => completeTodo(id)} className="todo-circle">
+          <span
+            onClick={() => {
+              completeTodo(id);
+              dispatch(filterTodo());
+            }}
+            className="todo-circle">
             <img src="./icons/icon-check.svg" alt="check" />
           </span>
           {text}
           <span
-            onClick={() => dispatch(deleteTodo(id))}
+            onClick={() => {
+              dispatch(deleteTodo(id));
+              dispatch(filterTodo());
+            }}
             className="todo-item-remove">
             <img src="./icons/icon-cross.svg" alt="Remove" />
           </span>

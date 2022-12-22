@@ -14,18 +14,14 @@ import ListItem from '../ListItem';
 
 const List = () => {
   const dispatch = useDispatch();
-  const allTodos = useSelector(state => state.todoList.todos);
   const todoItems = useSelector(state => state.todoList.filteredTodos);
   const filters = useSelector(state => state.todoList.filters);
   const activeFilter = useSelector(state => state.todoList.activeFilter);
-  const todosLeft = allTodos.filter(todo => !todo.isCompleted).length;
+  const todosLeft = useSelector(state => state.todoList.todos).filter(
+    todo => !todo.isCompleted
+  ).length;
 
   const droppableId = 'todo-list-id';
-
-  // Re-render filtered todos on todo change
-  React.useEffect(() => {
-    dispatch(filterTodo());
-  }, [allTodos]);
 
   return (
     <div className={'todo-list ' + styles.todoList}>
@@ -62,7 +58,10 @@ const List = () => {
           ))}
         </div>
         <button
-          onClick={() => dispatch(clearCompleted())}
+          onClick={() => {
+            dispatch(clearCompleted());
+            dispatch(filterTodo());
+          }}
           className="todo-list-clear">
           Clear Completed
         </button>
