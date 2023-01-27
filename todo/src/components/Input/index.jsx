@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addTodo } from '../../redux/slices/todoListSlice';
+import { addTodo, filterTodo } from '../../redux/slices/todoListSlice';
 
 import styles from './Input.module.scss';
 
@@ -11,6 +11,7 @@ const Input = () => {
   const addTodoItem = () => {
     if (value) {
       dispatch(addTodo(value));
+      dispatch(filterTodo());
       setValue('');
     }
   };
