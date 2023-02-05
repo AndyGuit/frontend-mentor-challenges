@@ -81,4 +81,4 @@
 - Live Site URL: [IP Address Tracker](https://ip-address-tracker-three-blue.vercel.app/)
 - GitHub Repo: [IP Address Tracker](https://github.com/AndyGuit/ip-address-tracker)
 
-![Desktop](https://github.com/AndyGuit/ip-address-tracker/solution_desktop.jpg)
+![Desktop](https://raw.githubusercontent.com/AndyGuit/ip-address-tracker/master/solution_desktop.jpg?token=GHSAT0AAAAAAB25HSKFTM35R7WIOLXUAIMWY67EZFA)
