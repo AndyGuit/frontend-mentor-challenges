@@ -11,7 +11,7 @@
 | 07  |         [Testimonials grid section](#testimonials-grid-section)         |  [URL](https://intro-component-with-signup-form-omega.vercel.app/)  | [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/intro-component-with-signup-form-master) |
 | 08  |           [Time tracking dashboard](#time-tracking-dashboard)           |    [URL](https://time-tracking-dashboard-eight-rho.vercel.app/)     |      [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)       |
 | 09  |                          [Todo App](#todo-app)                          |            [URL](https://todo-app-mocha-iota.vercel.app/)           |                       [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/todo)              |
-| 10  |                [IP Address Tracker](#ip-address-tracker)                |            [URL](https://todo-app-mocha-iota.vercel.app/)           |                       [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/todo)              |
+| 10  |                [IP Address Tracker](#ip-address-tracker)                |            [URL](https://todo-app-mocha-iota.vercel.app/)           |                                    [Repo](https://github.com/AndyGuit/ip-address-tracker)                          |
 
 ## FAQ Accordion Card without JS
 
@@ -79,6 +79,6 @@
 ## IP Address Tracker
 
 - Live Site URL: [IP Address Tracker](https://todo-app-mocha-iota.vercel.app/)
-- GitHub Repo: [IP Address Tracker](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/todo)
+- GitHub Repo: [IP Address Tracker](https://github.com/AndyGuit/ip-address-tracker)
 
-![Desktop](ip-address-tracker/solution_desktop.jpg)
+![Desktop](https://github.com/AndyGuit/ip-address-tracker/solution_desktop.jpg)
