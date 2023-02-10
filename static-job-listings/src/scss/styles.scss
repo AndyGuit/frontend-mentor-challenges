@@ -12,4 +12,15 @@
 
 body {
   font-size: 15px;
+  background-image: url('../assets/images/bg-header-desktop.svg');
+  background-color: $primary-text;
+  background-repeat: no-repeat;
+
+  @media (max-width: 376px) {
+    background-image: url('../assets/images/bg-header-mobile.svg');
+  }
+}
+
+li {
+  list-style: none;
 }

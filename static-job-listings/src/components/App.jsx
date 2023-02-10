@@ -1,7 +1,9 @@
+import JobList from './JobList';
+
 function App() {
   return (
     <div className="App">
-      <h1>job listing</h1>
+      <JobList />
     </div>
   );
 }
