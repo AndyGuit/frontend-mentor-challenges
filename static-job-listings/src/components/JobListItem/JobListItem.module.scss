@@ -1,4 +1,5 @@
 @import '../../scss/vars';
+
 .jobItem {
   width: 100%;
 
@@ -12,6 +13,7 @@
   box-shadow: 0px 5px 20px -10px $secondary;
   border-radius: 5px;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .img {
@@ -27,6 +29,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
+  margin-right: 25px;
 }
 
 .descTop {
@@ -89,6 +92,7 @@
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
   gap: 17px;
   margin-left: auto;
 
@@ -106,5 +110,66 @@
       color: #fff;
       background-color: $primary-text;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .jobItem {
+    flex-direction: column;
+    padding: 35px 30px 20px 20px;
+    margin-bottom: 40px;
+  }
+
+  .img {
+    position: absolute;
+    left: 20px;
+  }
+
+  .desc {
+    margin-right: 0;
+  }
+
+  .descBottom {
+    justify-content: left;
+    gap: 10px;
+    font-size: 1em;
+    min-width: unset;
+  }
+
+  .filters {
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: unset;
+    border-top: 1px solid $secondary;
+  }
+}
+
+@media (max-width: 605px) {
+  .img {
+    top: -8.5%;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .descTop {
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  .descMid {
+    h2 {
+      font-size: 1em;
+    }
+  }
+
+  .filters {
+    justify-content: flex-start;
   }
 }
