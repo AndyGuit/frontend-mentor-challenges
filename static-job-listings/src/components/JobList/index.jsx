@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import JobListItem from '../JobListItem';
 
 import data from '../../data.json';
@@ -8,6 +8,25 @@ import JobFilters from '../JobFilters';
 
 const JobList = () => {
   const [filters, setFilters] = useState([]);
+  const [filteredData, setFilteredData] = useState([...data]);
+
+  useEffect(() => {
+    if (!filters.length) {
+      setFilteredData([...data]);
+    } else {
+      filterData();
+    }
+  }, [filters]);
+
+  const filterData = () => {
+    const filtered = filteredData.filter(job => {
+      const items = [job.role, job.level, ...job.languages, ...job.tools];
+
+      return filters.every(filter => items.includes(filter));
+    });
+
+    setFilteredData(filtered);
+  };
 
   const addFilter = filter => {
     if (!filters.includes(filter)) {
@@ -22,17 +41,12 @@ const JobList = () => {
 
     setFilters([...arr1, ...arr2]);
   };
-  // const filters = data.map(job => [
-  //   job.role,
-  //   job.level,
-  //   ...job.languages,
-  //   ...job.tools,
-  // ]);
+
   return (
     <div className={styles.JobListBlock}>
       <ul className="job-list">
         <JobFilters removeFilter={removeFilter} filters={filters} />
-        {data.map(job => (
+        {filteredData.map(job => (
           <JobListItem addFilter={addFilter} key={job.id} {...job} />
         ))}
       </ul>
