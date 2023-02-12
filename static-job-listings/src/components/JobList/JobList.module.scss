@@ -3,6 +3,7 @@
 .JobListBlock {
   display: flex;
   justify-content: center;
+  position: relative;
   min-height: calc(100vh - 156px);
   margin-top: 156px;
   padding: 0 20px;

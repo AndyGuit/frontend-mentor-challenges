@@ -7,7 +7,6 @@ const JobListItem = props => {
     company,
     contract,
     featured,
-    id,
     languages,
     level,
     location,
@@ -16,6 +15,7 @@ const JobListItem = props => {
     postedAt,
     role,
     tools,
+    addFilter,
   } = props;
   const isNew = props.new;
 
@@ -43,13 +43,15 @@ const JobListItem = props => {
           <span>{postedAt}</span>
           <span className={styles.divider}></span>
           <span>{contract}</span>
-          <span className={styles.divider}></span> {/* &#183; */}
+          <span className={styles.divider}></span>
           <span>{location}</span>
         </div>
       </div>
       <div className={styles.filters}>
         {[role, level, ...languages, ...tools].map((el, i) => (
-          <span key={i}>{el}</span>
+          <span onClick={() => addFilter(el)} key={i}>
+            {el}
+          </span>
         ))}
       </div>
     </li>
