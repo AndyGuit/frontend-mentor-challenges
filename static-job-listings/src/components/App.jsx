@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import JobList from './JobList';
 
 function App() {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import JobListItem from '../JobListItem';
 
 import data from '../../data.json';
@@ -7,8 +8,20 @@ import styles from './JobList.module.scss';
 import JobFilters from '../JobFilters';
 
 const JobList = () => {
+  const navigate = useNavigate();
+
   const [filters, setFilters] = useState([]);
   const [filteredData, setFilteredData] = useState([...data]);
+
+  useEffect(() => {
+    const urlFilters = window.location.search;
+    if (urlFilters) {
+      const savedFilters = urlFilters
+        .substring(urlFilters.indexOf('=') + 1)
+        .split(',');
+      setFilters(savedFilters);
+    }
+  }, []);
 
   useEffect(() => {
     if (!filters.length) {
@@ -16,7 +29,18 @@ const JobList = () => {
     } else {
       filterData();
     }
+    addFilterParams();
   }, [filters]);
+
+  const addFilterParams = () => {
+    if (!filters.length) {
+      navigate('');
+      return;
+    }
+
+    const queryString = '?filters=' + filters.join(',');
+    navigate(queryString);
+  };
 
   const filterData = () => {
     const filtered = filteredData.filter(job => {
