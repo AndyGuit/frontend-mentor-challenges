@@ -55,3 +55,23 @@
     }
   }
 }
+
+.clearBtn {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  font-size: 1.2em;
+  font-weight: 700;
+  color: $primary-text;
+
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

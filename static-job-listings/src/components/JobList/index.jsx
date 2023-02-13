@@ -69,7 +69,11 @@ const JobList = () => {
   return (
     <div className={styles.JobListBlock}>
       <ul className="job-list">
-        <JobFilters removeFilter={removeFilter} filters={filters} />
+        <JobFilters
+          setFilters={setFilters}
+          removeFilter={removeFilter}
+          filters={filters}
+        />
         {filteredData.map(job => (
           <JobListItem addFilter={addFilter} key={job.id} {...job} />
         ))}

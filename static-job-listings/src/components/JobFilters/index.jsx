@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './JobFilters.module.scss';
 
-const JobFilters = ({ filters, removeFilter }) => {
+const JobFilters = ({ filters, removeFilter, setFilters }) => {
   if (!filters.length) return;
 
   return (
@@ -24,6 +24,9 @@ const JobFilters = ({ filters, removeFilter }) => {
             </span>
           );
         })}
+        <button onClick={() => setFilters([])} className={styles.clearBtn}>
+          Clear
+        </button>
       </div>
     </div>
   );
