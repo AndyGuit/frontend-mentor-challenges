@@ -12,6 +12,8 @@
 | 08  |           [Time tracking dashboard](#time-tracking-dashboard)           |    [URL](https://time-tracking-dashboard-eight-rho.vercel.app/)     |      [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/time-tracking-dashboard-main)       |
 | 09  |                          [Todo App](#todo-app)                          |            [URL](https://todo-app-mocha-iota.vercel.app/)           |                       [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/todo)              |
 | 10  |                [IP Address Tracker](#ip-address-tracker)                |      [URL](https://ip-address-tracker-three-blue.vercel.app/)       |                                    [Repo](https://github.com/AndyGuit/ip-address-tracker)                          |
+| 11  |                [Static Job Listings](#static-job-listings)              |         [URL](https://static-job-listings-beta.vercel.app/)         |            [Repo](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/static-job-listings)          |
+
 
 ## FAQ Accordion Card without JS
 
@@ -82,3 +84,10 @@
 - GitHub Repo: [IP Address Tracker](https://github.com/AndyGuit/ip-address-tracker)
 
 ![Desktop](https://raw.githubusercontent.com/AndyGuit/ip-address-tracker/master/solution_desktop.jpg?token=GHSAT0AAAAAAB25HSKFTM35R7WIOLXUAIMWY67EZFA)
+
+## Static Job Listings
+
+- Live Site URL: [Static Job Listings](https://static-job-listings-beta.vercel.app/)
+- GitHub Repo: [Static Job Listings](https://github.com/AndyGuit/frontend-mentor-challenges/tree/master/static-job-listings)
+
+![Desktop](static-job-listings/solution_desktop.jpg)
