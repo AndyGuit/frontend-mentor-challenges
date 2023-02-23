@@ -31,8 +31,6 @@ export class CalcModel implements Model {
   }
 
   handleNumber(value: string): string {
-    console.log('model');
-    console.log(value);
     if (this.n1 === '0') {
       this.n1 = value;
 
@@ -50,5 +48,15 @@ export class CalcModel implements Model {
     }
 
     return this.n2;
+  }
+
+  handleOperator(value: string): string {
+    if (this.n1 && this.n2) {
+      this.n1 = this.calculate(this.n1, this.operator, this.n2).toString();
+      this.n2 = '';
+    }
+
+    this.operator = value;
+    return this.n1;
   }
 }
