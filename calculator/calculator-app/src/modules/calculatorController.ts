@@ -16,6 +16,10 @@ export class CalcController {
     if (actionType === 'operator') {
       return this.model.handleOperator(action);
     }
+
+    if (actionType === 'calculate') {
+      return this.model.handleCalculate();
+    }
   }
 
   getActionString(action: string): string {

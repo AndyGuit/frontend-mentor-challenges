@@ -59,4 +59,15 @@ export class CalcModel implements Model {
     this.operator = value;
     return this.n1;
   }
+
+  handleCalculate(): string {
+    if (!this.n2) return this.n1;
+
+    console.log(this.n1, this.n2);
+
+    this.n1 = this.calculate(this.n1, this.operator, this.n2).toString();
+    this.n2 = '';
+    this.operator = '';
+    return this.n1;
+  }
 }
