@@ -4,6 +4,7 @@ export class calcView {
   controller: CalcController;
   root: HTMLElement;
   wrapper: HTMLElement;
+  display: HTMLElement;
 
   constructor(root: HTMLElement) {
     this.root = root;
@@ -12,22 +13,21 @@ export class calcView {
     this.wrapper = document.createElement('div');
     this.wrapper.classList.add('wrapper');
 
-    this.createDisplay();
+    this.display = document.createElement('div');
+    this.display.classList.add('display');
+    this.display.textContent = '0';
+
+    this.wrapper.appendChild(this.display);
+
     this.createButtons();
   }
 
   handleAction(action: string) {
-    console.log(action);
-    // this.controller.handleAction(action);
+    const res = this.controller.handleAction(action);
+    this.display.textContent = res || '';
   }
 
-  createDisplay(): void {
-    const div = document.createElement('div');
-    div.classList.add('display');
-    div.textContent = '0';
-
-    this.wrapper.appendChild(div);
-  }
+  createDisplay(): void {}
 
   createButtons(): void {
     const div = document.createElement('div');

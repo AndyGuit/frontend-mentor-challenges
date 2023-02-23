@@ -29,4 +29,26 @@ export class CalcModel implements Model {
         return 'Wrong Operator';
     }
   }
+
+  handleNumber(value: string): string {
+    console.log('model');
+    console.log(value);
+    if (this.n1 === '0') {
+      this.n1 = value;
+
+      return this.n1;
+    } else if (this.operator === '') {
+      this.n1 += value;
+
+      return this.n1;
+    } else if (this.operator) {
+      if (this.n2 === '0') {
+        this.n2 = value;
+      } else {
+        this.n2 += value;
+      }
+    }
+
+    return this.n2;
+  }
 }
