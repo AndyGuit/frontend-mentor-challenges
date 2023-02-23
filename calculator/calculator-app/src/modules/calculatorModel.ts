@@ -63,11 +63,22 @@ export class CalcModel implements Model {
   handleCalculate(): string {
     if (!this.n2) return this.n1;
 
-    console.log(this.n1, this.n2);
-
-    this.n1 = this.calculate(this.n1, this.operator, this.n2).toString();
+    this.n1 = this.calculate(this.n1, this.operator, this.n2);
     this.n2 = '';
     this.operator = '';
     return this.n1;
+  }
+
+  handleDecimal(): string {
+    if (!this.operator) {
+      if (!this.n1.includes('.')) this.n1 += '.';
+
+      return this.n1;
+    } else {
+      if (!this.n2) this.n2 = '0.';
+      if (!this.n2.includes('.')) this.n2 += '.';
+
+      return this.n2;
+    }
   }
 }

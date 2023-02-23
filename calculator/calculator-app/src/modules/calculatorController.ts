@@ -20,6 +20,10 @@ export class CalcController {
     if (actionType === 'calculate') {
       return this.model.handleCalculate();
     }
+
+    if (actionType === 'decimal') {
+      return this.model.handleDecimal();
+    }
   }
 
   getActionString(action: string): string {
