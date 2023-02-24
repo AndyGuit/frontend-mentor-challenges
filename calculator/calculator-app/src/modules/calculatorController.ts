@@ -24,6 +24,10 @@ export class CalcController {
     if (actionType === 'decimal') {
       return this.model.handleDecimal();
     }
+
+    if (actionType === 'del') {
+      return this.model.handleDel();
+    }
   }
 
   getActionString(action: string): string {

@@ -81,4 +81,24 @@ export class CalcModel implements Model {
       return this.n2;
     }
   }
+
+  handleDel(): string {
+    if (!this.operator) {
+      if (this.n1 === '0') return this.n1;
+      if (this.n1.length === 1) this.n1 = '0';
+      if (this.n1.length > 1) {
+        this.n1 = this.n1.substring(0, this.n1.length - 1);
+      }
+
+      return this.n1;
+    } else {
+      if (this.n2 === '0') return this.n2;
+      if (!this.n2 || this.n2.length === 1) this.n2 = '0';
+      if (this.n2.length > 1) {
+        this.n2 = this.n2.substring(0, this.n2.length - 1);
+      }
+
+      return this.n2;
+    }
+  }
 }
