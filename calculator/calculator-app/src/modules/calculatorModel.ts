@@ -101,4 +101,12 @@ export class CalcModel implements Model {
       return this.n2;
     }
   }
+
+  handleReset(): string {
+    this.n1 = '0';
+    this.n2 = '';
+    this.operator = '';
+
+    return this.n1;
+  }
 }

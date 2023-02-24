@@ -9,10 +9,6 @@ export class CalcController {
   handleAction(action: string) {
     const actionType = this.getActionString(action);
 
-    if (actionType === 'number') {
-      return this.model.handleNumber(action);
-    }
-
     if (actionType === 'operator') {
       return this.model.handleOperator(action);
     }
@@ -28,6 +24,12 @@ export class CalcController {
     if (actionType === 'del') {
       return this.model.handleDel();
     }
+
+    if (actionType === 'reset') {
+      return this.model.handleReset();
+    }
+
+    return this.model.handleNumber(action);
   }
 
   getActionString(action: string): string {
