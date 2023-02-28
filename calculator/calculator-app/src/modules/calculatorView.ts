@@ -27,8 +27,6 @@ export class calcView {
     this.display.textContent = res || '';
   }
 
-  createDisplay(): void {}
-
   createButtons(): void {
     const div = document.createElement('div');
     div.classList.add('buttons');
