@@ -1,4 +1,5 @@
 @import './_fonts';
+@import './_themes';
 
 *,
 *::before,
@@ -43,6 +44,16 @@ body {
   .btn {
     border-radius: 10px;
     font-size: 1em;
+    border: none;
     text-transform: uppercase;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    transition: filter 0.3s ease;
+
+    cursor: pointer;
+
+    &:active {
+      filter: brightness(1.2);
+    }
   }
 }

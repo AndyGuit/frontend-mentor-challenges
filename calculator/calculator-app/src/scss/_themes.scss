@@ -1,0 +1,97 @@
+@import './_vars';
+
+.theme-1 {
+  background-color: $t1-main-bg;
+
+  .display {
+    color: $t1-secondary-text;
+    background-color: $t1-screen-bg;
+  }
+
+  .buttons {
+    background-color: $t1-toggle-bg;
+
+    .btn {
+      color: $t1-primary-text;
+      background-color: $t1-primary-key-bg;
+      border-bottom-color: $t1-primary-key-shadow;
+
+      &-del,
+      &-reset {
+        color: $t1-secondary-text;
+        background-color: $t1-secondary-key-bg;
+        border-bottom-color: $t1-secondary-key-shadow;
+      }
+    }
+
+    button[data-action='='] {
+      color: $t1-secondary-text;
+      background-color: $t1-alert-key-bg;
+      border-bottom-color: $t1-alert-key-shadow;
+    }
+  }
+}
+
+.theme-2 {
+  background-color: $t2-main-bg;
+
+  .display {
+    color: $t2-primary-text;
+    background-color: $t2-screen-bg;
+  }
+
+  .buttons {
+    background-color: $t2-toggle-bg;
+
+    .btn {
+      color: $t2-primary-text;
+      background-color: $t2-primary-key-bg;
+      border-bottom-color: $t2-primary-key-shadow;
+
+      &-del,
+      &-reset {
+        color: $t2-secondary-text;
+        background-color: $t2-secondary-key-bg;
+        border-bottom-color: $t2-secondary-key-shadow;
+      }
+    }
+
+    button[data-action='='] {
+      color: $t2-secondary-text;
+      background-color: $t2-alert-key-bg;
+      border-bottom-color: $t2-alert-key-shadow;
+    }
+  }
+}
+
+.theme-3 {
+  background-color: $t3-main-bg;
+
+  .display {
+    color: $t3-primary-text;
+    background-color: $t3-screen-bg;
+  }
+
+  .buttons {
+    background-color: $t3-toggle-bg;
+
+    .btn {
+      color: $t3-primary-text;
+      background-color: $t3-primary-key-bg;
+      border-bottom-color: $t3-primary-key-shadow;
+
+      &-del,
+      &-reset {
+        color: white;
+        background-color: $t3-secondary-key-bg;
+        border-bottom-color: $t3-secondary-key-shadow;
+      }
+    }
+
+    button[data-action='='] {
+      color: $t3-secondary-text;
+      background-color: $t3-alert-key-bg;
+      border-bottom-color: $t3-alert-key-shadow;
+    }
+  }
+}
