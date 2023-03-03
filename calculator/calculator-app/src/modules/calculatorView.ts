@@ -17,6 +17,8 @@ export class calcView {
     this.display.classList.add('display');
     this.display.textContent = '0';
 
+    this.createHeader();
+
     this.wrapper.appendChild(this.display);
 
     this.createButtons();
@@ -25,6 +27,45 @@ export class calcView {
   handleAction(action: string) {
     const res = this.controller.handleAction(action);
     this.display.textContent = res || '';
+  }
+
+  createHeader(): void {
+    const header = document.createElement('header');
+    const h1 = document.createElement('h1');
+    h1.textContent = 'calc';
+    header.append(h1);
+
+    const themeToggle = this.createThemeToggle();
+
+    header.append(themeToggle);
+    this.wrapper.append(header);
+  }
+
+  createThemeToggle(): HTMLElement {
+    const wrap = document.createElement('div');
+    wrap.classList.add('theme-toggle');
+    const text = document.createElement('p');
+    text.textContent = 'THEME';
+    wrap.append(text);
+
+    const toggler = document.createElement('div');
+    const themes = document.createElement('div');
+    const dot = document.createElement('span');
+    toggler.classList.add('toggle-button');
+    dot.classList.add('toggle-dot');
+    themes.classList.add('toggle-themes');
+
+    for (let i = 1; i < 4; i++) {
+      const span = document.createElement('span');
+      span.textContent = i.toString();
+      themes.append(span);
+    }
+
+    toggler.append(dot, themes);
+
+    wrap.append(toggler);
+
+    return wrap;
   }
 
   createButtons(): void {

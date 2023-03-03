@@ -19,6 +19,60 @@ body {
   font-size: 32px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1em 0;
+
+  h1 {
+    font-size: 1em;
+  }
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2.5em;
+
+  font-size: 0.4em;
+
+  .toggle-button {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 10px;
+
+    position: relative;
+
+    cursor: pointer;
+  }
+
+  .toggle-themes {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: -65%;
+    left: 12px;
+  }
+
+  .toggle-dot {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    transition: transform 0.3s ease-in;
+  }
+}
+
 .display {
   margin-bottom: 1em;
   padding: 0.65em;

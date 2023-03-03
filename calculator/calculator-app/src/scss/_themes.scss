@@ -3,6 +3,18 @@
 .theme-1 {
   background-color: $t1-main-bg;
 
+  header {
+    color: $t1-secondary-text;
+  }
+
+  .toggle-button {
+    background-color: $t1-toggle-bg;
+  }
+
+  .toggle-dot {
+    background-color: $t1-alert-key-bg;
+  }
+
   .display {
     color: $t1-secondary-text;
     background-color: $t1-screen-bg;
@@ -35,6 +47,10 @@
 .theme-2 {
   background-color: $t2-main-bg;
 
+  header {
+    color: $t2-primary-text;
+  }
+
   .display {
     color: $t2-primary-text;
     background-color: $t2-screen-bg;
@@ -66,6 +82,10 @@
 
 .theme-3 {
   background-color: $t3-main-bg;
+
+  header {
+    color: $t3-primary-text;
+  }
 
   .display {
     color: $t3-primary-text;
