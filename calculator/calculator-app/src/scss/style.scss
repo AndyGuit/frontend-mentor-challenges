@@ -57,6 +57,10 @@ header {
     position: relative;
 
     cursor: pointer;
+
+    &:hover .toggle-dot {
+      filter: brightness(1.2);
+    }
   }
 
   .toggle-themes {
@@ -76,7 +80,7 @@ header {
     height: 15px;
     border-radius: 50%;
 
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, filter 0.3s ease;
   }
 }
 
