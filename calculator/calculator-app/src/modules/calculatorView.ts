@@ -30,7 +30,8 @@ export class calcView {
   }
 
   toggleTheme = () => {
-    const [theme, index, numOfThemes] = this.controller.handleTheme();
+    const [theme, index] = this.controller.handleTheme();
+    const numOfThemes = this.controller.getNumOfThemes();
     const body = document.querySelector('body')!;
     body.className = theme;
 
@@ -62,6 +63,8 @@ export class calcView {
     text.textContent = 'THEME';
     wrap.append(text);
 
+    const numOfThemes = this.controller.getNumOfThemes();
+
     const toggler = document.createElement('div');
     const themes = document.createElement('div');
     const dot = document.createElement('span');
@@ -69,7 +72,7 @@ export class calcView {
     dot.classList.add('toggle-dot');
     themes.classList.add('toggle-themes');
 
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i <= numOfThemes; i++) {
       const span = document.createElement('span');
       span.textContent = i.toString();
       themes.append(span);
