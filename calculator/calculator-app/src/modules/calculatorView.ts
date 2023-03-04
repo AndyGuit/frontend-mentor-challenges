@@ -22,6 +22,12 @@ export class calcView {
     this.wrapper.appendChild(this.display);
 
     this.createButtons();
+
+    const [savedTheme, index] = this.controller.getTheme();
+    const numOfThemes = this.controller.getNumOfThemes();
+
+    this.toggleThemeColors(savedTheme);
+    this.toggleThemeDot(index, numOfThemes);
   }
 
   handleAction(action: string) {
@@ -32,16 +38,22 @@ export class calcView {
   toggleTheme = () => {
     const [theme, index] = this.controller.handleTheme();
     const numOfThemes = this.controller.getNumOfThemes();
+
+    this.toggleThemeColors(theme);
+    this.toggleThemeDot(index, numOfThemes);
+  };
+
+  toggleThemeColors = (theme: string) => {
     const body = document.querySelector('body')!;
     body.className = theme;
+  };
 
-    const togglerDot = this.wrapper.querySelector('.toggle-dot');
-    const toggleBtn = this.wrapper.querySelector('.toggle-button');
-    const btnRect = toggleBtn?.getClientRects()[0];
+  toggleThemeDot = (index: number, numOfThemes: number) => {
+    const togglerDot = this.wrapper.querySelector<HTMLElement>('.toggle-dot')!;
 
-    const dotPos = ((btnRect?.width - 20) / numOfThemes) * index;
+    const dotPos = ((70 - 20) / numOfThemes) * index;
 
-    togglerDot.style = `transform: translateX(${dotPos}px)`;
+    togglerDot.setAttribute('style', `transform: translateX(${dotPos}px)`);
   };
 
   createHeader(): void {

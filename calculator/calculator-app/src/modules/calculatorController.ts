@@ -58,4 +58,11 @@ export class CalcController {
   getNumOfThemes(): number {
     return this.model.themes.length;
   }
+
+  getTheme(): [string, number] {
+    const index = this.model.activeThemeIndex;
+    const theme = this.model.themes[index];
+
+    return [theme, index];
+  }
 }

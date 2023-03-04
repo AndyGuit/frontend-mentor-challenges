@@ -13,7 +13,11 @@ export class CalcModel implements Model {
   themes = ['theme-1', 'theme-2', 'theme-3'];
   activeThemeIndex = 0;
 
-  constructor() {}
+  constructor() {
+    const savedTheme = localStorage.getItem('calculator-theme');
+    const savedThemeIndex = this.themes.indexOf(savedTheme || 'theme-1');
+    this.activeThemeIndex = savedThemeIndex;
+  }
 
   calculate(n1: string, operator: string, n2: string): string {
     const num1 = parseFloat(n1);
@@ -113,11 +117,14 @@ export class CalcModel implements Model {
     return this.n1;
   }
 
-  handleTheme() {
+  handleTheme(): void {
     if (this.activeThemeIndex >= this.themes.length - 1) {
       this.activeThemeIndex = 0;
     } else {
       this.activeThemeIndex++;
     }
+    const theme = this.themes[this.activeThemeIndex];
+
+    localStorage.setItem('calculator-theme', theme);
   }
 }
