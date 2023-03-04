@@ -29,6 +29,20 @@ export class calcView {
     this.display.textContent = res || '';
   }
 
+  toggleTheme = () => {
+    const [theme, index, numOfThemes] = this.controller.handleTheme();
+    const body = document.querySelector('body')!;
+    body.className = theme;
+
+    const togglerDot = this.wrapper.querySelector('.toggle-dot');
+    const toggleBtn = this.wrapper.querySelector('.toggle-button');
+    const btnRect = toggleBtn?.getClientRects()[0];
+
+    const dotPos = ((btnRect?.width - 20) / numOfThemes) * index;
+
+    togglerDot.style = `transform: translateX(${dotPos}px)`;
+  };
+
   createHeader(): void {
     const header = document.createElement('header');
     const h1 = document.createElement('h1');
@@ -62,6 +76,8 @@ export class calcView {
     }
 
     toggler.append(dot, themes);
+
+    toggler.addEventListener('click', this.toggleTheme);
 
     wrap.append(toggler);
 

@@ -10,6 +10,9 @@ export class CalcModel implements Model {
   n2 = '';
   operator = '';
 
+  themes = ['theme-1', 'theme-2', 'theme-3'];
+  activeThemeIndex = 0;
+
   constructor() {}
 
   calculate(n1: string, operator: string, n2: string): string {
@@ -108,5 +111,13 @@ export class CalcModel implements Model {
     this.operator = '';
 
     return this.n1;
+  }
+
+  handleTheme() {
+    if (this.activeThemeIndex >= this.themes.length - 1) {
+      this.activeThemeIndex = 0;
+    } else {
+      this.activeThemeIndex++;
+    }
   }
 }

@@ -51,6 +51,14 @@
     color: $t2-primary-text;
   }
 
+  .toggle-button {
+    background-color: $t2-toggle-bg;
+  }
+
+  .toggle-dot {
+    background-color: $t2-alert-key-bg;
+  }
+
   .display {
     color: $t2-primary-text;
     background-color: $t2-screen-bg;
@@ -85,6 +93,14 @@
 
   header {
     color: $t3-primary-text;
+  }
+
+  .toggle-button {
+    background-color: $t3-toggle-bg;
+  }
+
+  .toggle-dot {
+    background-color: $t3-alert-key-bg;
   }
 
   .display {

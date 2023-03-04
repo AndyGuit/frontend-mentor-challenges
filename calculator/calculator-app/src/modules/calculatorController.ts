@@ -45,4 +45,14 @@ export class CalcController {
 
     return action;
   }
+
+  handleTheme(): [string, number, number] {
+    this.model.handleTheme();
+
+    const index = this.model.activeThemeIndex;
+    const theme = this.model.themes[index];
+    const numOfThemes = this.model.themes.length;
+
+    return [theme, index, numOfThemes];
+  }
 }
